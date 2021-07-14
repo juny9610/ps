@@ -11,9 +11,9 @@ vector< pair<int,int> > map[MAX];
 int dist[MAX];
 
 int main() {
-    //ios::sync_with_stdio(false);
-    //cin.tie(NULL);
-    //cout.tie(NULL);
+    ios::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
 
     cin >> V >> E >> K;
 
@@ -34,6 +34,8 @@ int main() {
         int cost = -pq.top().first;
         int cur = pq.top().second;
         pq.pop();
+
+        if(dist[cur] < cost) continue;
 
         for(int i = 0; i < map[cur].size(); i++) {
             int next = map[cur][i].first;
