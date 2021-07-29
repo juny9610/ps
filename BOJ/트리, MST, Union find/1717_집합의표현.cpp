@@ -12,13 +12,12 @@ int find(int x) {
     else return parent[x] = find(parent[x]);
 }
 
-bool merge(int x, int y) {
+void merge(int x, int y) {
     x = find(x);
     y = find(y);
-    if(x == y) return false;
+    if(x == y) return;
     if(x > y) parent[x] = y;
     else parent[y] = x;
-    return true;
 }
 
 
@@ -26,7 +25,7 @@ int main() {
     ios_base :: sync_with_stdio(false); cin.tie(NULL);
 
     cin >> n >> m;
-    for(int i = 0; i < n; i++) parent[i] = i;
+    for(int i = 0; i <= n; i++) parent[i] = i;
     while(m--) {
         int c, a, b;
         cin >> c >> a >> b;
