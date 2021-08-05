@@ -14,13 +14,12 @@ int main() {
     vector<int> lis;
     for(int i = 0; i < N; i++) cin >> A[i];
 
-    int idx = 0;
     for(int i = 0; i < N; i++) {
         if(lis.empty()) lis.push_back(A[i]);
         else if(lis.back() < A[i]) lis.push_back(A[i]);
         else {
-            int idx2 = lower_bound(lis.begin(), lis.end(), A[i]) - lis.begin();
-            lis[idx2] = A[i];
+            int idx = lower_bound(lis.begin(), lis.end(), A[i]) - lis.begin();
+            lis[idx] = A[i];
         }
     }
 
