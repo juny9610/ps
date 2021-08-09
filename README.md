@@ -17,3 +17,4 @@
 ### 트리
 
 ### 이분 탐색
+[설명 보기](https://github.com/juny9610/algorithmStudy/tree/master/Rare6_이분탐색/juny)
