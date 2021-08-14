@@ -18,3 +18,6 @@
 
 ### 이분 탐색
 [설명 보기](https://github.com/juny9610/algorithmStudy/tree/master/Rare6_이분탐색/juny)
+
+### 동적 프로그래밍 (Dynamic Programming)
+[설명 보기](https://github.com/kanghuiseon/algorithmStudy/tree/master/Rare7_DP/juny)
