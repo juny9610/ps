@@ -1,3 +1,4 @@
+// dp[i][j]: j 시간동안 1~i를 공부해서 얻을 수 있는 최대 점수
 #include <iostream>
 #include <algorithm>
 using namespace std;
